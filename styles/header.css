@@ -6,13 +6,26 @@
     gap: 2rem;
 }
 
+header {
+    position: fixed;
+    right: 0%;
+    left: 0%;
+    top: 0%;
+    padding: 3rem;
+    z-index: 0;
+
+    background-color: var(--bg-color);
+}
+
 .header__logo {
     flex-grow: 1;
+    top: 0%;
+
 }
 
 .header__logo img {
     object-fit: cover;
-    width: max(min(60%, 25rem), 17rem);
+    width: max(min(60%, 20rem), 17rem);
 }
 
 header ul {
@@ -48,6 +61,7 @@ header i {
 }
 
 
+
 @media only screen and (min-width:940px) {
     .hamburguer-sidebar {
         display: none !important;
@@ -59,11 +73,12 @@ header i {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: bisque;
-    position: absolute;
+    background-color: white;
+    position: fixed;
+    right: 0%;
+    z-index: 0;
     top: 0%;
     bottom: 0%;
-    right: 0%;
     width: max(40%, 25rem);
     padding: 2rem;
     row-gap: 4rem;
@@ -74,7 +89,6 @@ header i {
 
 
 @media only screen and (max-width:940px) {
-
 
     .nav-link,
     .button-mode {
@@ -90,7 +104,6 @@ header i {
     nav ul {
         flex-direction: column;
         height: fit-content;
-
     }
 
     nav li a {

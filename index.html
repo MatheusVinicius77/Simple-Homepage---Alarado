@@ -7,7 +7,7 @@
     <title>Alarado</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -15,25 +15,12 @@
 </head>
 
 <body>
-    <header class="container flex">
-        <div class="header__logo">
-            <img src="dccl--responsive-simple-homepage/alarado-icon-homepage.svg" alt="alarado company logo">
-        </div>
-        <nav class="nav-link">
-            <ul class="flex">
-                <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
-                <li class="link-item"><a href="">Product</a></li>
-                <li class="link-item"><a href="">Resource</a></li>
-                <li class="link-item"><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="button-mode">
-            <img class="" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
-            <img class="white-bg" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
-        </button>
-        <i class="fa-solid fa-bars fa-3x"></i>
-        <div class="hamburguer-sidebar">
-            <i class="close-button fa-solid fa-x fa-2x "></i>
+    <header>
+        <div class="container flex">
+
+            <div class="header__logo">
+                <img src="dccl--responsive-simple-homepage/alarado-icon-homepage.svg" alt="alarado company logo">
+            </div>
             <nav class="nav-link">
                 <ul class="flex">
                     <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
@@ -46,21 +33,41 @@
                 <img class="" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
                 <img class="white-bg" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
             </button>
+            <i class="fa-solid fa-bars fa-3x"></i>
+            <div class="hamburguer-sidebar">
+                <i class="close-button fa-solid fa-x fa-2x "></i>
+                <nav class="nav-link">
+                    <ul class="flex">
+                        <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
+                        <li class="link-item"><a href="">Product</a></li>
+                        <li class="link-item"><a href="">Resource</a></li>
+                        <li class="link-item"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button-mode">
+                    <img class="" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
+                    <img class="white-bg" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
+                </button>
+            </div>
         </div>
     </header>
     <main>
         <section class="hero container">
-            <p>😎 Simple way to communicate</p>
-            <h1>Actions for Accessibility in Design</h1>
-            <p>The fastest way to build and deploy websites with resusable components.</p>
-            <button>Get Started</button>
-            <a href="">Get live demo</a>
-            <div>
-                <img src="dccl--responsive-simple-homepage/Done_ring_round_fill.svg" alt="a green done sign">
-                <p>No credit card required</p>
-                <img src="dccl--responsive-simple-homepage/Done_ring_round_fill.svg" alt="a green done sign">
-                <p>No software to install</p>
+            <div class="hero__content">
+                <p>😎 SIMPLE WAY TO COMMUNICATE</p>
+                <h1 class="hero__title">Actions for Accessibility in Design</h1>
+                <h2>The fastest way to build and deploy websites with resusable components.</h2>
+                <button class="hero__button">GET STARTED</button>
+                <a href="">Get live demo</a>
+                <div>
+                    <img src="dccl--responsive-simple-homepage/Done_ring_round_fill.svg" alt="a green done sign">
+                    <p>No credit card required</p>
+                    <img src="dccl--responsive-simple-homepage/Done_ring_round_fill.svg" alt="a green done sign">
+                    <p>No software to install</p>
+                </div>
             </div>
+            <img id="hero__img" src="dccl--responsive-simple-homepage/hero-image-simple-homepage.png"
+                alt="a robot usign a notebook">
         </section>
     </main>
     <script src="https://kit.fontawesome.com/db37ea401b.js" crossorigin="anonymous"></script>
