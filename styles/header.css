@@ -34,7 +34,8 @@ header ul {
 
 header li a {
     color: var(--font-gray-color);
-    font-weight: bold;
+    font-weight: 600;
+
     opacity: 0.6;
 }
 
@@ -80,7 +81,7 @@ header i {
     top: 0%;
     bottom: 0%;
     width: max(40%, 25rem);
-    padding: 2rem;
+    padding: 4rem;
     row-gap: 4rem;
     transition: all 250ms ease-out;
 

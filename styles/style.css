@@ -19,7 +19,7 @@ body {
 
 
 h1 {
-    font-size: 7rem;
+    font-size: var(--title-text-size);
     color: var(--font-gray-color);
 }
 
@@ -29,7 +29,6 @@ li a {
     list-style: none;
     text-decoration: none;
     font-size: var(--body-text-size);
-
 }
 
 body p {
@@ -87,11 +86,11 @@ section {
 }
 
 .hero__content h2 {
-    color: hsla(210, 33%, 20%, 0.6);
-    font-weight: 600;
+    color: hsla(210, 33%, 20%, 0.8);
+    font-weight: 500;
     margin-top: 5rem;
     margin-bottom: 3rem;
-
+    font-size: var(--body-text-size);
 }
 
 .hero__button {
