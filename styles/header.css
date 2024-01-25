@@ -13,6 +13,7 @@ header {
     top: 0%;
     padding: 3rem;
     z-index: 0;
+    transition: background 0.25s;
 
     background-color: var(--bg-color);
 }
@@ -21,11 +22,13 @@ header {
     flex-grow: 1;
     top: 0%;
 
+
 }
 
 .header__logo img {
     object-fit: cover;
     width: max(min(60%, 20rem), 17rem);
+
 }
 
 header ul {
@@ -41,18 +44,25 @@ header li a {
 
 
 .button-mode {
-    background-color: var(--font-gray-color);
+    background-color: #223344;
     border-radius: 2.5rem;
-    padding: 0.4rem 0.4rem;
+    padding: 0 0.4rem;
+    padding-top: 0.4rem;
     border: none;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+.button-mode button {
+    border: none;
+    background-color: transparent;
+    padding: 0.4rem;
+
+}
+
 .button-mode img {
     border-radius: 50%;
-    padding: 0.3rem;
     text-align: center;
 
 }
