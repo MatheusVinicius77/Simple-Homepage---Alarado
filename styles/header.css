@@ -1,0 +1,110 @@
+@import url(styles/root.css);
+
+
+.nav-link {
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+.header__logo {
+    flex-grow: 1;
+}
+
+.header__logo img {
+    object-fit: cover;
+    width: max(min(60%, 25rem), 17rem);
+}
+
+header ul {
+    gap: 5rem;
+}
+
+header li a {
+    color: var(--font-gray-color);
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+
+.button-mode {
+    background-color: var(--font-gray-color);
+    border-radius: 2.5rem;
+    padding: 0.4rem 0.4rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-mode img {
+    border-radius: 50%;
+    padding: 0.3rem;
+    text-align: center;
+
+}
+
+header i {
+    display: none !important;
+}
+
+
+@media only screen and (min-width:940px) {
+    .hamburguer-sidebar {
+        display: none !important;
+    }
+}
+
+.hamburguer-sidebar {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: bisque;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: max(40%, 25rem);
+    padding: 2rem;
+    row-gap: 4rem;
+    transition: all 250ms ease-out;
+
+}
+
+
+
+@media only screen and (max-width:940px) {
+
+
+    .nav-link,
+    .button-mode {
+        display: none;
+        flex-grow: 0;
+    }
+
+
+    .hamburguer-sidebar i {
+        align-self: flex-end;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: fit-content;
+
+    }
+
+    nav li a {
+        font-size: 4.5rem;
+    }
+
+
+    header i {
+        display: inline-block !important;
+    }
+
+    .button-mode {
+        background-color: black;
+        justify-self: center;
+    }
+
+}

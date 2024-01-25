@@ -1,0 +1,59 @@
+@import url(root.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+    font-size: var(--title-text-size);
+    color: var(--font-black-color);
+}
+
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    font-size: var(--body-text-size);
+
+}
+
+body p {
+    font-size: var(--body-text-size);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 126rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.dark-mode-color {
+    color: var(--font-gray-color);
+    opacity: 1;
+}
+
+
+.white-bg {
+    background-color: var(--white-color);
+}

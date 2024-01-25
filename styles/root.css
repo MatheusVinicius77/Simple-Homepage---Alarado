@@ -1,26 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
-
-
 :root {
     --font-blue-color: #2A4DD0;
     --font-green-color: #4CA154;
     --font-black-color: #111729;
     --font-gray-color: #223344;
     --font-soft-color: #909193;
-    --white-color: FFFFFF;
-    --bg-color: F2F9FE;
-
+    --white-color: #FFFFFF;
+    --bg-color: #F2F9FE;
     --title-text-size: 6rem;
     --body-text-size: 1.8rem;
     --button-text-size: 1.6rem;
     --small-text: 1.4rem;
-}
-
-
-html {
-    font-size: 62.5%;
 }

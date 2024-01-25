@@ -5,27 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarado</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="nav-link">
-                <li class="link-item"><a href=""><img src="dccl--responsive-simple-homepage/alarado-icon-homepage.svg"
-                            alt="Company logo"></a></li>
-                <li class="link-item"><a href="">About us</a></li>
+    <header class="container flex">
+        <div class="header__logo">
+            <img src="dccl--responsive-simple-homepage/alarado-icon-homepage.svg" alt="alarado company logo">
+        </div>
+        <nav class="nav-link">
+            <ul class="flex">
+                <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
                 <li class="link-item"><a href="">Product</a></li>
                 <li class="link-item"><a href="">Resource</a></li>
                 <li class="link-item"><a href="">Contact</a></li>
             </ul>
         </nav>
+        <button class="button-mode">
+            <img class="" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
+            <img class="white-bg" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
+        </button>
+        <i class="fa-solid fa-bars fa-3x"></i>
+        <div class="hamburguer-sidebar">
+            <i class="close-button fa-solid fa-x fa-2x "></i>
+            <nav class="nav-link">
+                <ul class="flex">
+                    <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
+                    <li class="link-item"><a href="">Product</a></li>
+                    <li class="link-item"><a href="">Resource</a></li>
+                    <li class="link-item"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="button-mode">
+                <img class="" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
+                <img class="white-bg" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
+            </button>
+        </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero container">
             <p>😎 Simple way to communicate</p>
             <h1>Actions for Accessibility in Design</h1>
             <p>The fastest way to build and deploy websites with resusable components.</p>
@@ -39,6 +63,8 @@
             </div>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/db37ea401b.js" crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>
