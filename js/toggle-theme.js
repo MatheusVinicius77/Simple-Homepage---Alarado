@@ -1,5 +1,6 @@
 const button_dark = document.querySelector('.button-dark');
 const button_light = document.querySelector('.button-light');
+console.log()
 
 button_dark.addEventListener('click', (value) => {
     if (value.target.className === 'light-moon') {
@@ -12,7 +13,7 @@ button_dark.addEventListener('click', (value) => {
         document.documentElement.style.setProperty('--bg-color', '#111729');
         document.documentElement.style.setProperty('--font-gray-color', '#FFFFFF');
         document.documentElement.style.setProperty('--font-black-color', '#FFFFFF');
-
+        document.querySelector('.fa-solid').style.color = '#FFFFFF'
         let logo_img = document.querySelector('.header__logo').children.item(0).src = 'dccl--responsive-simple-homepage/alarado_light.svg';
 
 
@@ -30,6 +31,7 @@ button_light.addEventListener('click', (value) => {
         document.documentElement.style.setProperty('--bg-color', '#F2F9FE');
         document.documentElement.style.setProperty('--font-gray-color', '#223344');
         document.documentElement.style.setProperty('--font-black-color', '#111729');
+        document.querySelector('.fa-solid').style.color = '#111729'
 
         let logo_img = document.querySelector('.header__logo').children.item(0).src = 'dccl--responsive-simple-homepage/alarado-icon-homepage.svg';
 
