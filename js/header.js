@@ -8,8 +8,6 @@ hamburguer_button.addEventListener('click', () => {
     hamburguer_sidebar.style.display = 'flex';
     nav_link.style.display = 'block';
     buttom_mode.style.display = 'block';
-    console.log('222')
-
 });
 
 
@@ -18,7 +16,6 @@ botoes.forEach((botao) => {
     botao.addEventListener('click', (value) => {
         console.log(value.target)
         if (value.target.className === 'light-moon') {
-            console.log('eae')
             document.querySelectorAll('.light-moon').item(1).style.display = 'none';
             document.querySelectorAll('.dark-moon').item(1).style.display = 'inline-block';
             document.querySelectorAll('.dark-sun').item(1).style.display = 'none';

@@ -1,6 +1,5 @@
 const button_dark = document.querySelector('.button-dark');
 const button_light = document.querySelector('.button-light');
-console.log()
 
 button_dark.addEventListener('click', (value) => {
     if (value.target.className === 'light-moon') {
@@ -15,8 +14,6 @@ button_dark.addEventListener('click', (value) => {
         document.documentElement.style.setProperty('--font-black-color', '#FFFFFF');
         document.querySelector('.fa-solid').style.color = '#FFFFFF'
         let logo_img = document.querySelector('.header__logo').children.item(0).src = 'dccl--responsive-simple-homepage/alarado_light.svg';
-
-
     }
 })
 
