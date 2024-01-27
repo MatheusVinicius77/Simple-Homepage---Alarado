@@ -90,7 +90,7 @@ section {
 
 #hero__img {
     object-fit: cover;
-    width: 100%;
+    width: 90%;
     max-width: 80rem;
 }
 
