@@ -53,7 +53,7 @@ body p {
 }
 
 .dark-mode-color {
-    color: var(--font-gray-color);
+    color: #223344;
     opacity: 1;
 }
 

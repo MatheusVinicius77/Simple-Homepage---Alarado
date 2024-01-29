@@ -10,7 +10,7 @@ header {
 }
 
 header li a {
-    color: var(--font-gray-color);
+    color: #223344;
     font-weight: 600;
 
     opacity: 0.6;

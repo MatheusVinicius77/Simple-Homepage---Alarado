@@ -10,7 +10,7 @@ button_dark.addEventListener('click', (value) => {
         document.getElementsByTagName('h2').item(0).style.color = '#FFFFFF';
 
         document.documentElement.style.setProperty('--bg-color', '#111729');
-        document.documentElement.style.setProperty('--font-gray-color', '#111729');
+        document.documentElement.style.setProperty('--font-gray-color', '#FFFFFF');
         document.documentElement.style.setProperty('--font-black-color', '#FFFFFF');
         document.querySelector('.fa-solid').style.color = '#FFFFFF'
         let logo_img = document.querySelector('.header__logo').children.item(0).src = 'dccl--responsive-simple-homepage/alarado_light.svg';
