@@ -17,45 +17,30 @@
 <body>
     <header>
         <div class="container flex">
-
             <div class="header__logo">
                 <img src="dccl--responsive-simple-homepage/alarado-icon-homepage.svg" alt="alarado company logo">
             </div>
-            <nav class="nav-link">
-                <ul class="flex">
-                    <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
-                    <li class="link-item"><a href="">Product</a></li>
-                    <li class="link-item"><a href="">Resource</a></li>
-                    <li class="link-item"><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="button-mode">
-                <button class="button-dark">
-                    <img class="light-moon" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
-                    <img class="dark-moon" src="dccl--responsive-simple-homepage/Moon_fill.svg" alt="">
-                </button>
-                <button class="button-light">
-                    <img class="dark-sun" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
-                    <img class="light-sun" src="dccl--responsive-simple-homepage/Sun_fill_light.svg" alt="">
-                </button>
-            </div>
-            <i class="fa-solid fa-bars fa-3x"></i>
-            <div class="hamburguer-sidebar">
-                <i class="close-button fa-solid fa-x fa-2x "></i>
-                <nav class="nav-link">
-                    <ul class="flex">
-                        <li class="link-item "><a class="dark-mode-color" href="">About us</a></li>
-                        <li class="link-item"><a href="">Product</a></li>
-                        <li class="link-item"><a href="">Resource</a></li>
-                        <li class="link-item"><a href="">Contact</a></li>
+            <i data-visible="false" class="fa-solid fa-bars fa-3x nav__toggle"></i>
+            <div data-visible="false" class="nav-wrapper flex">
+                <i data-visible="false" class="close-button fa-solid fa-x fa-2x "></i>
+                <nav>
+                    <ul class="nav__list flex">
+                        <li class="nav__item"><a href="" class="nav__link dark-mode-color">About us</a></li>
+                        <li class="nav__item"><a href="" class="nav__link ">Product</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Resource</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
                     </ul>
                 </nav>
-                <button class="button-mode">
-                    <img class="light-moon" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
-                    <img class="dark-sun" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
-                    <img class="dark-moon" src="dccl--responsive-simple-homepage/Moon_fill.svg" alt="">
-                    <img class="light-sun" src="dccl--responsive-simple-homepage/Sun_fill_light.svg" alt="">
-                </button>
+                <div class="button-mode">
+                    <button class="button-dark">
+                        <img class="light-moon" src="dccl--responsive-simple-homepage/Moon_fill_light.svg" alt="">
+                        <img class="dark-moon" src="dccl--responsive-simple-homepage/Moon_fill.svg" alt="">
+                    </button>
+                    <button class="button-light">
+                        <img class="dark-sun" src="dccl--responsive-simple-homepage/Sun_fill.svg" alt="">
+                        <img class="light-sun" src="dccl--responsive-simple-homepage/Sun_fill_light.svg" alt="">
+                    </button>
+                </div>
             </div>
         </div>
     </header>

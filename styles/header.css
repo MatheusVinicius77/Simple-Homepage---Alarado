@@ -1,38 +1,12 @@
-@import url(styles/root.css);
-
-
-.nav-link {
-    flex-grow: 1;
-    gap: 2rem;
-}
-
 header {
     position: fixed;
-    right: 0%;
-    left: 0%;
-    top: 0%;
-    padding: 3rem;
-    z-index: 0;
-    transition: background 0.25s;
-
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: '1';
+    padding: 2rem;
     background-color: var(--bg-color);
-}
-
-.header__logo {
-    flex-grow: 1;
-    top: 0%;
-
-
-}
-
-.header__logo img {
-    object-fit: cover;
-    width: max(min(60%, 20rem), 17rem);
-
-}
-
-header ul {
-    gap: 5rem;
+    transition: background 0.25s;
 }
 
 header li a {
@@ -43,15 +17,15 @@ header li a {
 }
 
 
+
 .button-mode {
     background-color: #223344;
     border-radius: 2.5rem;
     padding: 0 0.4rem;
     padding-top: 0.4rem;
     border: none;
-    display: flex;
-    align-items: center;
     gap: 1rem;
+    width: fit-content;
 }
 
 .button-mode button {
@@ -64,73 +38,78 @@ header li a {
 .button-mode img {
     border-radius: 50%;
     text-align: center;
-
 }
 
-header i {
+.close-button,
+.nav__toggle {
     display: none !important;
 }
 
+.nav-wrapper[data-visible='true'] {
+    transform: translateX(0%);
+    transition: all 350ms ease-in;
+}
+
+.nav-wrapper nav {
+    flex-grow: 1;
+}
+
+.header__logo,
+.nav-wrapper {
+    flex-grow: 1;
+}
 
 
-@media only screen and (min-width:940px) {
-    .hamburguer-sidebar {
-        display: none !important;
+.nav__list {
+    gap: 2rem;
+}
+
+.close-button[data-visible='true'] {
+    display: block !important;
+}
+
+@media (max-width:740px) {
+
+    .nav-wrapper {
+        position: fixed;
+        top: 0rem;
+        flex-direction: column;
+        flex-grow: 0;
+        right: 0rem;
+        bottom: 0rem;
+        background-color: white;
+        transform: translateX(100%);
+        padding: 7rem;
+        transition: all 350ms ease-out;
+
     }
-}
 
-.hamburguer-sidebar {
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: white;
-    position: fixed;
-    right: 0%;
-    z-index: 0;
-    top: 0%;
-    bottom: 0%;
-    width: max(40%, 25rem);
-    padding: 4rem;
-    row-gap: 4rem;
-    transition: all 250ms ease-out;
+    .nav-wrapper nav {
+        flex-grow: 0;
+        margin-bottom: 3rem;
+    }
 
-}
+    .close-button {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+    }
 
+    .nav__toggle {
+        position: relative;
+    }
 
-
-@media only screen and (max-width:940px) {
-
-    .nav-link,
-    .button-mode {
-        display: none;
+    nav {
         flex-grow: 0;
     }
 
-
-    .hamburguer-sidebar i {
-        align-self: flex-end;
-
-    }
-
-    nav ul {
+    .nav__list {
         flex-direction: column;
-        height: fit-content;
+        flex-grow: 0;
+
     }
 
-    nav li a {
-        font-size: 4.5rem;
-        color: var(--font-gray-color-color) !important;
+    .nav__toggle {
+        display: block !important;
     }
-
-
-    header i {
-        display: inline-block !important;
-    }
-
-    .button-mode {
-        background-color: black;
-        justify-self: center;
-    }
-
 }
