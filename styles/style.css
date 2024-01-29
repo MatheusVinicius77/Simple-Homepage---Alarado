@@ -49,12 +49,6 @@ body p {
     margin: 0 auto;
     background-color: var(--bg-color);
     transition: background 0.25s;
-
-}
-
-.dark-mode-color {
-    color: #223344;
-    opacity: 1;
 }
 
 

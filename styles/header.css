@@ -9,13 +9,16 @@ header {
     transition: background 0.25s;
 }
 
-header li a {
-    color: #223344;
-    font-weight: 600;
 
+.nav__link {
+    color: var(--font-gray-color);
+    font-weight: 600;
     opacity: 0.6;
 }
 
+.nav__link[data-actualPage="true"] {
+    opacity: 1;
+}
 
 
 .button-mode {
@@ -48,10 +51,12 @@ header li a {
 .nav-wrapper[data-visible='true'] {
     transform: translateX(0%);
     transition: all 350ms ease-in;
+
 }
 
 .nav-wrapper nav {
     flex-grow: 1;
+
 }
 
 .header__logo,
@@ -61,14 +66,15 @@ header li a {
 
 
 .nav__list {
-    gap: 2rem;
+    gap: 7rem;
+
 }
 
 .close-button[data-visible='true'] {
     display: block !important;
 }
 
-@media (max-width:740px) {
+@media (max-width:900px) {
 
     .nav-wrapper {
         position: fixed;
@@ -78,6 +84,7 @@ header li a {
         right: 0rem;
         bottom: 0rem;
         background-color: white;
+        box-shadow: 1px 1px 3px gray;
         transform: translateX(100%);
         padding: 7rem;
         transition: all 350ms ease-out;
@@ -87,6 +94,16 @@ header li a {
     .nav-wrapper nav {
         flex-grow: 0;
         margin-bottom: 3rem;
+    }
+
+    .nav__link {
+        color: #223344;
+        font-weight: 600;
+        opacity: 0.6;
+    }
+
+    .nav__link[data-actualPage="true"] {
+        opacity: 1;
     }
 
     .close-button {
